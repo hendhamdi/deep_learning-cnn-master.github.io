@@ -45,7 +45,7 @@ Le script `split.py` dans le répertoire `other` divise le dataset en ensembles 
 ## Résultats
 .Précision finale : 85% (entraînement), 81% (test).
 .Tendances observées : Diminution progressive de la perte, augmentation constante de la précision.
-##Visualisation
+## Visualisation
 Un graphique illustrant la perte et la précision par époque est généré et sauvegardé en PDF.
 
 ![image](https://github.com/user-attachments/assets/fc3eea4d-0a4c-419a-98e6-85de635e511e)
