@@ -36,14 +36,17 @@ Assurez-vous d'avoir les bibliothèques suivantes installées :
 Le script `split.py` dans le répertoire `other` divise le dataset en ensembles d'entraînement et de test :
     ```python
     from sklearn.model_selection import train_test_split
+    
 Exemple d'utilisation inclus dans le script
 
 ### Entraînement du modèle
 .Phase d'entraînement : Ajustement des poids avec rétropropagation.
+
 .Phase de test : Évaluation de la capacité du modèle à généraliser.
 
 ## Résultats
 .Précision finale : 85% (entraînement), 81% (test).
+
 .Tendances observées : Diminution progressive de la perte, augmentation constante de la précision.
 
 ## Visualisation
