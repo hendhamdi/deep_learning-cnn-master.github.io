@@ -1,17 +1,17 @@
-# Classification d'Images avec un Réseau Neuronal Convolutif (CNN)
+# Image Classification with a Convolutional Neural Network (CNN)
 
 ## Description
-Ce projet utilise PyTorch pour créer, entraîner et évaluer un réseau neuronal convolutif (CNN) destiné à la classification d'images. Les données sont divisées en ensembles d'entraînement (80%) et de test (20%), et des métriques telles que la perte (loss) et la précision (accuracy) sont suivies pour analyser les performances du modèle.
+This project uses PyTorch to create, train, and evaluate a convolutional neural network (CNN) for image classification. The dataset is split into training (80%) and testing (20%) sets, and metrics such as loss and accuracy are tracked to analyze the model's performance.
 
-## Fonctionnalités
- **Partitionnement des données** : Division du dataset en ensembles d'entraînement (80%) et de test (20%) à l'aide du script `split.py`.
-- **Modèle CNN** : Construction d’un réseau avec des couches convolutionnelles, de normalisation, d’activation (*ReLU*), de *pooling*, et une couche entièrement connectée pour la classification.
-- **Optimisation avancée** : Utilisation de l’algorithme SGD (*Stochastic Gradient Descent*), avec ajustement des hyperparamètres tels que le taux d’apprentissage et le *momentum*.
-- **Analyse des performances** : Suivi des métriques au fil des époques, incluant la perte et la précision.
-- **Visualisation** : Génération d’un graphique illustrant la perte et la précision au fil des époques, sauvegardé au format PDF.
+## Features
+ **Data Splitting** : Splitting the dataset into training (80%) and testing (20%) sets using  `split.py` script.
+- **CNN Model** : Construction of a network with convolutional layers, normalization, activation (ReLU), pooling, and a fully connected layer for classification.
+- **Advanced Optimization** : Implementation of the SGD (Stochastic Gradient Descent) algorithm with hyperparameter tuning such as learning rate and momentum.
+- **Performance Analysis** : Tracking metrics across epochs, including loss and accuracy.
+- **Visualization** : Generation of a graph illustrating loss and accuracy over epochs, saved as a PDF.
 
 ## Dataset
-Le dataset utilisé contient les classes suivantes :
+The dataset contains the following classes:
 - Annual Crop
 - Forest
 - River
@@ -23,34 +23,34 @@ Le dataset utilisé contient les classes suivantes :
 - Residential
 - Herbaceous Vegetation
 
-## Dépendances
-Assurez-vous d'avoir les bibliothèques suivantes installées :
+## Dependencies
+Ensure the following libraries are installed:
 - Python 3.x
 - PyTorch
 - Matplotlib
 - Scikit-learn
-- MySQL (si besoin de stockage supplémentaire)
+- MySQL (if additional storage is needed)
 
-## Utilisation
-### Partitionnement des données
-Le script `split.py` dans le répertoire `other` divise le dataset en ensembles d'entraînement et de test :
+## Usage
+### Data Splitting
+The `split.py` script in the  `other` directory splits the dataset into training and testing sets:
     ```python
     from sklearn.model_selection import train_test_split
     
-Exemple d'utilisation inclus dans le script
+An example of usage is included in the script.
 
-### Entraînement du modèle
-.Phase d'entraînement : Ajustement des poids avec rétropropagation.
+### Model Training
+. Training Phase : Adjusting weights through backpropagation.
 
-.Phase de test : Évaluation de la capacité du modèle à généraliser.
+.Testing Phase : Evaluating the model's ability to generalize.
 
-## Résultats
-.Précision finale : 85% (entraînement), 81% (test).
+## Results
+.Final Accuracy : 85% (training), 81% (testing).
 
-.Tendances observées : Diminution progressive de la perte, augmentation constante de la précision.
+.Observed Trends : Progressive decrease in loss, consistent increase in accuracy.
 
-## Visualisation
-Un graphique illustrant la perte et la précision par époque est généré et sauvegardé en PDF.
+## Visualization
+A graph illustrating loss and accuracy across epochs is generated and saved as a PDF.
 
 ![image](https://github.com/user-attachments/assets/fc3eea4d-0a4c-419a-98e6-85de635e511e)
 ![image](https://github.com/user-attachments/assets/202f89dd-5432-4479-bf0b-e5b6c99158a6)
